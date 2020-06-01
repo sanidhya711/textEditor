@@ -1,203 +1,368 @@
-.App{ 
-  background-color:#4d4c7d; 
-  margin: 0;
-  width:100vw;
-  height:100vh;
-  position: absolute;
-  }
-  .slidetray{
-  position: absolute;
-  left: -7.5vw;
-  top:29vh ;
-  background-color:#204051; 
-  height: 50vh;
-  width: 10vw;
-  border-radius:0px 70px 70px 0px;
-  }
-  .slidetrayhover{
-      animation-name: slideytray; 
-      animation-duration: 2s;
-      animation-delay: 0.9s;
-      animation-fill-mode: forwards;
-  }
-  .arrow{
-  height: 6.5vh;
-  width: 3vw;
-  position: absolute;
-  left: 6.2vw;
-  top: 10vw ;
-  }
-  .arrowhover{
-      animation-name: rotatee;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      width: 3vw;
-  }
-  .textholder{
-      font-size: 10vh;
-      position: absolute;
-      left:40vw;
-      top: 4vh;
-      font-weight: 100;
-      font-family: cursive;
-      color: #d7385e;
-  }
-  .div1{
-  background-color: #d8b9c3;
-  position: absolute;
-  animation-name: fadee; 
-  animation-duration: 15s;   
-  animation-iteration-count: infinite;
-  
-  z-index: 3;
-  height: 57vh;
-  width: 62vw;
-  }
-  .div2{
-  position: absolute;
-  background-color: #d8b9c3;
-  
-  animation-name: fadee2; 
-  animation-duration: 15s;   
-  animation-iteration-count: infinite;
-  z-index: 2;
-  height: 57vh;
-  width: 62vw;
-   }
-  .div3{
-  position: absolute;
-  background-color:#d8b9c3;
-  height: 57vh;
-  width: 62vw;
-  }
-  img{
-      height: 55vh;
-      width: 60.8vw;
-      padding: 1vh 0.7vw ;
-  }
-  .imgholder{
-  position: absolute;
-  left: 19vw;
-  top: 27vh;
-  }
-  .topbar{
-  height: 2.5vh;
-  width: 100vw;
-  background-color:#202040;
-  animation-name: topbarchange ;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  position: absolute;
-  top: 0vh;
-  }
-  @keyframes slideytray{
-  0%{left:-7.5vw;}
-  100%{left:0vw;}
-  }
-  @keyframes fadee2{
-      0%{z-index: 2;}
-      66%{z-index: 2;}
-      67%{z-index: -2;}
-      100%{z-index: -2;}
-  } 
-  @keyframes fadee{
-  0%{z-index: 3;}
-  33%{z-index: 3;}
-  34%{z-index: -1;}
-  100%{z-index: -1;}
-  }
-  @keyframes rotatee{
-  from{transform: rotate(0deg);}
-  to{transform: rotate(180deg);}
-  }
-  @keyframes topbarchange{
-      0%{background-color:#202040;}
-      50%{background-color:#363636;}
-      100%{background-color:#202040;}
-  }
-  .onphoto{
-      background-color: lightslategrey;
-      height: 5vh;
-      width: 60.8vw;
-      opacity: 0;
-      position: absolute;
-      top: 51vh;
-      left: 0.7vw;
-      font-size: 5vh;
-      font-family: cursive;
-  }
-  hr{
-      color: #d7385e;
-      border-top: 0.5vh dotted ;
-      border-top-width: 0.5vw;
-      border-bottom: 0vh;
-      border-right: 0vh;
-      border-left:0vh ;
-      position: absolute;
-      top: 7.4vh ;
-      left: -1.25vw;
-      width: 22.5vw;
-  }
-  .div1:hover .onphoto{
-  opacity:0.9;
-  }
-  .div2:hover .onphoto{
-  opacity:0.9;
-  }
-  .div3:hover .onphoto{
-  opacity:0.9;
-  }
-  .onphototext{
-      position: relative;
-      left:26.4vw ;
-      top: -1.1vh;
-  }
-  .youtubelogo{
-      height: 10vh;
-      width: 5vw;
-      background: transparent;
-      position: relative;
-      top:6vh;
-      left: 0.7vw;
-  }
-  .gmaillogo{
-      height: 8.5vh;
-      width: 4.4vw;
-      background: transparent;
-      position: relative;
-      top:9.6vh;
-      left: 1vw;
-  }
-  .outlooklogo{
-      height: 8.7vh;
-      width: 4.4vw;
-      background: transparent;
-      position: relative;
-      top:7vh;
-      left: 1vw;
-  }
-  .bottombar{
-      height: 3vh;
-      width: 100vw;
-      background-color:#202040;
-      position:absolute;
-      bottom: 0vh;
+body{ 
+    background-color:#4d4c7d; 
+    margin: 0;
+    width:100vw;
+    height:100vh;
+}
+    .slidetraynotclicked{
+    left: -7.5vw;
+    top:29vh ;
+    background-color:#204051; 
+    height: 50vh;
+    width: 10vw;
+    border-radius:0px 70px 70px 0px;
     }
-  .sumanboi{
-  position: relative;
-  left: 45vw;
-  color:#97e5ef;
-  
-  }
-  .youtubelogo:hover{
-  opacity: 0.3;
-  }
-  .gmaillogo:hover{
-  opacity: 0.3;
-      }
-  .outlooklogo:hover{
-  opacity: 0.3;
-  }
-  div{
-      display: inline;
-  }
+    .slidetrayclicked{
+    left: -7.5vw;
+    top:29vh ;
+    background-color:#204051; 
+    height: 50vh;
+    width: 10vw;
+    border-radius:0px 70px 70px 0px;
+        animation-name: slideytray; 
+        animation-duration: 2s;
+        animation-delay: 0.9s;
+        animation-fill-mode: forwards;
+    }
+    .slidetraysecondclicked{
+        top:29vh ;
+        background-color:#204051; 
+        height: 50vh;
+        width: 10vw;
+        border-radius:0px 70px 70px 0px;
+        animation-name: slideytraybackwards; 
+        animation-duration: 2s;
+        animation-delay: 0.7s;
+        animation-fill-mode: forwards;
+    }
+    .arrowclicked{
+    animation-name: rotatee;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    width: 3vw;
+    height: 6.6vh;
+    width: 3vw;
+    left: 6.9vw;
+    top: 21.5vh;
+
+    }
+    .arrowsecondclicked{
+        animation-name: rotateebackwards;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        width: 3vw;
+        height: 6.6vh;
+        width: 3vw;
+        left: 6.9vw;
+        top: 21.5vh;
+    
+        }
+    .arrownotclicked{
+    height: 6.6vh;
+    width: 3vw;
+    left: 6.9vw;
+    top: 21.5vh;
+    }
+    .textholder{
+        font-size: 11vh;
+        color: #d7385e;
+        font-family: 'Balsamiq Sans', cursive;
+        position: absolute;
+        top:2vh;
+        left: 35vw;
+        z-index: 4;
+        animation-name: textholdermove;
+        animation-duration: 4.2s;
+        animation-fill-mode: forwards;
+        animation-delay:1.7s;
+    }
+    .divforanimating{
+        position: absolute;
+        left:33.7vw;
+        top:5vh;
+        height: 17vh;
+        width: 25vw;
+        z-index: 3;
+        background-color:#4d4c7d; 
+        animation-name:divforanimatingmove ;
+        animation-duration: 4.2s;
+        animation-delay: 1.7s;
+        animation-fill-mode: forwards;
+    }
+    #div1{
+    animation-name: fadee; 
+    animation-duration: 17s;   
+    animation-iteration-count: infinite;
+    z-index: 3;
+    }
+    #div2{
+    animation-name: fadee2; 
+    animation-duration: 17s;   
+    animation-iteration-count: infinite;
+    z-index: 2;
+    }
+    img{
+    position:absolute;
+    }
+    #imgholder{
+    opacity: 0;
+    animation-name: imganimate;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    }
+    .topbar{
+    height: 2.5vh;
+    width: 100vw;
+    background-color:#202040;
+    animation-name: topbarchange ;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    top: 0vh;
+    z-index: 5;
+    }
+    hr{
+        color: #d7385e;
+        border-top: 0.5vh dotted ;
+        border-top-width: 0.65vw;
+        border-bottom: 0vh;
+        border-right: 0vh;
+        border-left:0vh ;
+        top: 11vh ;
+        left: -0.8vw;
+        width: 23.5vw;
+        position: absolute;
+        animation-name: hranimate;
+        animation-duration: 2.7s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 0.3s;
+    }
+    .youtubelogo{
+        height: 10vh;
+        width: 5vw;
+        background: transparent; 
+        top:6vh;
+        left: 1.3vw;
+    }
+    .gmaillogo{
+        height: 8.5vh;
+        width: 4.4vw;
+        background: transparent;
+        top:21vh;
+        left: 1.6vw;
+    }
+    .outlooklogo{
+        height: 8.7vh;
+        width: 4.4vw;
+        background: transparent;
+        top:35vh;
+        left: 1.6vw;
+    }
+    .bottombar{
+        height: 3vh;
+        width: 100vw;
+        background-color:#202040;
+        bottom: 0vh;
+    }
+    .bottomsanidhya{
+    left: 45vw;
+    color:#97e5ef;
+    
+    }
+    .youtubelogo:hover{
+    opacity: 0.3;
+    }
+    .gmaillogo:hover{
+    opacity: 0.3;
+    }
+    .outlooklogo:hover{
+    opacity: 0.3;
+    }
+    div{
+        display: inline;
+        position: absolute; 
+    }
+    #ss{
+       margin-left: 0vw;
+       animation-name: letteranimation;
+       animation-duration: 0.5s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       position: absolute;
+       animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+       opacity: 0;
+    }
+    #aa{
+        margin-left: 3.3vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.15s;
+        opacity: 0;
+    }
+    #nn{
+        margin-left: 6.1vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.3s;
+        opacity: 0;
+    }
+    #ii{
+        margin-left: 8.9vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.45s;
+        opacity: 0;
+    }
+    #dd{
+        margin-left: 10vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+    #hh{
+        margin-left: 12.8vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.75s;
+        opacity: 0;
+    }
+    #yy{
+        margin-left: 15.6vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        animation-delay: 0.9s;
+        opacity: 0;
+    }
+    #aa2{
+        margin-left: 17.8vw;
+        animation-name: letteranimation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        position: absolute;
+        animation-timing-function:cubic-bezier(.12,.69,.61,1.23);
+        opacity: 0;
+        animation-delay: 1.05s;
+    }
+    .imagee{
+    border: 0.78vh solid #d8b9c3;
+    height: 57vh;
+    width: 46vw;
+    position: absolute;
+    left: 19vw;
+    top: 27vh;
+    }
+    .hiholder{
+    background-color: #d7385e;
+    position: absolute;
+    left:35vw;
+    top:7.5vh;
+    font-size: 8vh;
+    color:#4d4c7d; 
+    font-family: roboto , sans-serif;
+    padding-top: 1.6vh;
+    padding-bottom: 1vh;
+    border-radius: 8px;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;;
+    z-index: 2;
+    animation-name: hianimate;
+    animation-duration: 4.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.7s;
+    width: 11.5vw;
+    }
+    .imgexplain{
+        left: 67vw;
+        top: 26vh;
+        background-color:#4d4c7d;
+        font-size: 4.5vh;
+        width: 14vw;
+        height: 57vh;
+    }
+    @keyframes letteranimation{
+    0%{top:-20vh;opacity: 0;}
+    0.1%{opacity: 1;}
+    100%{top:5vh; opacity: 1;}
+    }
+    @keyframes slideytray{
+    0%{left:-7.5vw;}
+    100%{left:0vw;}
+    }
+    @keyframes fadee2{
+    0%{z-index: 2;}
+    66%{z-index: 2;}
+    67%{z-index: -2;}
+    100%{z-index: -2;}
+    } 
+    @keyframes fadee{
+    0%{z-index: 3;}
+    33%{z-index: 3;}
+    34%{z-index: -1;}
+    100%{z-index: -1;}
+    }
+    @keyframes rotatee{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(180deg);}
+    }
+    @keyframes rotateebackwards{
+        0%{transform: rotate(180deg);}
+        100%{transform: rotate(0deg);}
+        }
+    @keyframes hranimate{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @keyframes imganimate{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    @keyframes hianimate{
+    0%{left:35vw;}
+    20%{left: 26.4vw;}
+    80%{left:26.4vw}
+    100%{left:35vw;}
+    }
+    @keyframes textholdermove{
+        0%{left: 35vw;}
+        20%{left: 40vw;}
+        80%{left: 40vw;}
+        100%{left: 35vw;}
+    }
+    @keyframes divforanimatingmove{
+        0%{left: 33.7vw;}
+        20%{left: 38.7vw;}
+        80%{left: 38.7vw;}
+        100%{left: 33.7vw;}
+    }
+    @keyframes slideytraybackwards{
+        0%{left:0vw;} 
+        100%{left:-7.5vw;} 
+    }
+    
