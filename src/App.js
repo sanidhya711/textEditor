@@ -1,12 +1,15 @@
 import React from 'react';
-import Hi from './Hi'
+import firebase from 'firebase'
+import SignUp from './SignUp'
 
 function App(){
+
   return (
     <div>
-    <Hi/>
+    <SignUp/>
     </div>
     );
   }
+
 export default App;
 

@@ -1,0 +1,94 @@
+body{ 
+    background-color:#4d4c7d; 
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    height:60vh;
+    width:55vw;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    font-size: 2.5vh;
+    background-color: rgb(6, 241, 210);
+}
+.newfilearea{
+    position: relative;
+    top: 5vh;
+}
+.deletebutton{
+    position: absolute;
+    top: 85vh;
+    left:45vw;
+    background-color: rgb(204, 63, 63);
+}
+.a{
+width: 10.8vw;
+height: 2.85vh;
+border: 0.15vw solid black;
+background-color:yellowgreen;
+border-radius: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: default;
+}
+.aholder{
+    position: absolute;
+    top: 16.4vh;
+    left: 20vw;
+    display: flex;
+justify-content: center;
+}
+.savetext{
+    position: absolute;
+    top: 45vh;
+    left: 80vw;
+    background-color: brown;
+    height: 10vh;
+    width: 10vh;
+    font-size: large;
+}
+#clicked1{
+    background-color: cadetblue;
+}
+#clicked2{
+    background-color: cadetblue;
+}
+#clicked3{
+    background-color: cadetblue;
+}
+#clicked4{
+    background-color: cadetblue;
+}
+#clicked5{
+    background-color: cadetblue;
+}
+.errormsg{
+    color: rgb(204, 63, 63);
+}
+#errorbtn{
+    color: rgb(6, 241, 210);
+}
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    position: absolute;
+    left:40vw;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+
